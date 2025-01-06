@@ -3,6 +3,7 @@ tasks = []
 def add_task():
     task = input("please enter a task: ")
     tasks.append(task)
+    task = task + " Incomplete"
     print(f"Task '{task}' has been added.")
 
 def view_task():
@@ -54,7 +55,7 @@ while True:
     elif choose == 4:
         delete_task()
     elif choose == 5:
-       quit
+       quit()
     else:
        print("Please enter a number from the list.")
     
